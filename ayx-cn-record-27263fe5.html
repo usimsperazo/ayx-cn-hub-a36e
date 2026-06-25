@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>简明访问指南 · 爱游戏体育</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            background: linear-gradient(145deg, #fce4b8 0%, #f7d39a 50%, #f0b87a 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 1.5rem;
+            color: #2e241c;
+        }
+        .card {
+            max-width: 820px;
+            width: 100%;
+            background: #fffcf7;
+            border-radius: 2.5rem 1rem 2.5rem 1rem;
+            box-shadow: 0 20px 35px rgba(130, 70, 20, 0.15), 0 6px 12px rgba(0,0,0,0.04);
+            padding: 2.8rem 2.5rem 3rem;
+            transition: box-shadow 0.2s;
+        }
+        @media (max-width: 600px) {
+            .card {
+                padding: 2rem 1.4rem 2.2rem;
+                border-radius: 2rem 0.5rem 2rem 0.5rem;
+            }
+            body {
+                padding: 0.8rem;
+            }
+        }
+        h1 {
+            font-size: 2.1rem;
+            font-weight: 650;
+            letter-spacing: -0.01em;
+            color: #4b2c1a;
+            border-left: 6px solid #d98c4a;
+            padding-left: 1rem;
+            margin-bottom: 0.9rem;
+        }
+        .subhead {
+            font-size: 1.05rem;
+            color: #7d5b3e;
+            background: #f7ede1;
+            display: inline-block;
+            padding: 0.2rem 1.1rem;
+            border-radius: 30px;
+            margin-bottom: 2rem;
+            font-weight: 470;
+        }
+        p {
+            line-height: 1.7;
+            margin-bottom: 1.2rem;
+            font-size: 1rem;
+            color: #3b2d22;
+        }
+        p strong {
+            color: #b0632c;
+            font-weight: 600;
+        }
+        .highlight-box {
+            background: #fff1e3;
+            border-radius: 28px;
+            padding: 1.2rem 1.8rem;
+            margin: 1.6rem 0 1.8rem;
+            border: 1px solid #efdac4;
+            font-size: 0.98rem;
+        }
+        .highlight-box p {
+            margin-bottom: 0.4rem;
+        }
+        .highlight-box p:last-child {
+            margin-bottom: 0;
+        }
+        .link-button {
+            display: inline-block;
+            background: #d98c4a;
+            color: #fffcf7;
+            font-weight: 550;
+            padding: 0.35rem 1.1rem;
+            border-radius: 40px;
+            text-decoration: none;
+            font-size: 0.95rem;
+            transition: background 0.2s, transform 0.1s;
+            box-shadow: 0 3px 6px rgba(170, 80, 20, 0.12);
+            margin: 0 0.1rem;
+        }
+        .link-button:hover {
+            background: #c1783a;
+            transform: scale(0.98);
+        }
+        a:not(.link-button) {
+            color: #b0632c;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+            text-decoration-thickness: 1px;
+            text-decoration-color: #dbb594;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        a:not(.link-button):hover {
+            color: #864f26;
+            text-decoration-color: #864f26;
+        }
+        .faq-piece {
+            margin-top: 2.2rem;
+            padding-top: 1.2rem;
+            border-top: 2px dashed #e8d4be;
+        }
+        .faq-piece summary {
+            font-weight: 520;
+            font-size: 1.02rem;
+            color: #4f311e;
+            cursor: pointer;
+            padding: 0.4rem 0;
+            list-style: none;
+        }
+        .faq-piece summary::-webkit-details-marker {
+            display: none;
+        }
+        .faq-piece summary::before {
+            content: "▸ ";
+            color: #d98c4a;
+            font-size: 1.2rem;
+        }
+        .faq-piece[open] summary::before {
+            content: "▾ ";
+        }
+        .faq-piece p {
+            margin: 0.6rem 0 0 1.4rem;
+            font-size: 0.95rem;
+        }
+        .foot-note {
+            margin-top: 2rem;
+            font-size: 0.88rem;
+            color: #846c55;
+            border-top: 1px solid #eedbcb;
+            padding-top: 1.6rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: baseline;
+            gap: 0.8rem;
+        }
+        .foot-note span {
+            opacity: 0.7;
+        }
+        .tagline {
+            background: #e7d3be;
+            padding: 0.2rem 1rem;
+            border-radius: 30px;
+            font-size: 0.85rem;
+            color: #4d311e;
+        }
+        hr {
+            border: none;
+            border-top: 1px solid #ebd9c6;
+            margin: 1.5rem 0;
+        }
+    </style>
+</head>
+<body>
+<div class="card">
+    <h1>简明访问指南 · 爱游戏体育</h1>
+    <div class="subhead">从快速定位到顺畅使用</div>
+
+    <p>对于希望直接体验体育内容平台的用户而言，<strong>爱游戏体育</strong> 提供了较为完整的赛事资讯与互动功能。本页面向初次接触的朋友，梳理几个最核心的操作逻辑与访问细节，避免因入口分散或界面差异产生困惑。</p>
+
+    <p>平台整体采用模块化布局，首页上方为当日重点赛事推荐，中部按联赛、项目分类陈列。若你关注特定联赛（如英超、CBA、欧冠等），可直接利用导航栏的「赛事」筛选标签。移动端界面同样保留了这一结构，左右滑动即可切换分类。</p>
+
+    <div class="highlight-box">
+        <p><strong>📌 访问提醒</strong></p>
+        <p>如果你此前未使用过该平台，建议在浏览器直接输入 <a href="https://ayx-cn-sports.com">爱游戏体育</a>，并观察地址栏是否显示安全连接（🔒 图标）。部分网络环境可能限制境外域名，若页面加载延迟，可尝试更换网络或刷新重试。</p>
+        <p>另外，平台内的「直播」与「回放」入口分别对应实时信号和已结束赛事录像，两者图标不同，注意区分。</p>
+    </div>
+
+    <p>在账号相关方面，注册流程仅需邮箱或手机号，验证码通常在 60 秒内送达。建议<strong>不要使用公共设备保存登录状态</strong>，退出时点击头像菜单最底部的「安全退出」。值得一提的是，平台大部分基础浏览功能无需登录即可使用，包括查看赛程、比分与新闻。</p>
+
+    <p>对于资深用户，爱游戏体育的数据统计模块值得关注。进入具体赛事详情页后，下滑可看到球队/球员实时数据、交锋记录、积分走势图等，信息密度较高。若需要导出数据，部分图表支持截图或复制文本，但暂未提供批量下载接口。</p>
+
+    <hr>
+
+    <div class="faq-piece">
+        <details>
+            <summary>FAQ · 常见疑问摘要</summary>
+            <p><strong>Q：是否需要安装插件或 App？</strong><br>A：网页端完全基于浏览器，无需额外插件。官方未提供桌面客户端，请认准域名 <a href="https://ayx-cn-sports.com">爱游戏体育</a>。</p>
+            <p><strong>Q：视频卡顿或黑屏如何解决？</strong><br>A：首先检查网络带宽（建议 5Mbps 以上），其次关闭浏览器广告拦截插件或把本域名加入白名单。黑屏通常与 CDN 节点有关，刷新或稍后再试即可。</p>
+            <p><strong>Q：是否支持多语言界面？</strong><br>A：目前以中文为主，部分赛事名称保留英文缩写。界面语言跟随浏览器默认语言设置，暂未提供手动切换开关。</p>
+        </details>
+    </div>
+
+    <div class="foot-note">
+        <span>内容索引 · 简明博客</span>
+        <span class="tagline">爱游戏体育 · 访问参考</span>
+    </div>
+</div>
+</body>
+</html>
